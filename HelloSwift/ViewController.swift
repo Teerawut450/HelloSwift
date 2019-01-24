@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Explicit
+    let myName: String = "Teerawut Koolkaew"
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    } //Main Method
+
+    @IBAction func changeButton(_ sender: UIButton) {
+        //replace to myName
+        titleLabel.text = myName
+    
     }
-
-
-}
+    
+} //Main Class
 
